@@ -2,10 +2,14 @@
 import SocketServer, SimpleHTTPServer, subprocess, os, commands
 from urlparse import urlparse, parse_qsl
 
+# Change the PWD to this location
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
 # VARS
 PORT = 8080
 IP = ''
-
 
 # This function will be used to confirm whether an application is running   
 def appRunning(appName):
