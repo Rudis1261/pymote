@@ -38,7 +38,7 @@ I have been reading up and it Python has a load of simple HTTP servers. Neat, he
 ***So what did I need it for?***  
 I built a remote for my ***Ubuntu*** since my Compro Remote stopped working.
 
-***How does it work?***
+***How does it work?*** 
 No 1. Install the Dependencies as indicated in the installation section above.
 No 2. If not running you can start the application from withing the pymote directory by running the following command in terminal. 
 
@@ -54,5 +54,5 @@ For example my pc's IP Address is 192.168.1.3, so on my phone I go to my browser
 ----------
 
 ## The CODE ##
-***pymote.py***
+***pymote.py*** 
 Coming soon
