@@ -14,7 +14,7 @@
             
             <!-- We need to set width limits in order to center spans -->
             <!-- Main remote container -->
-            <div style="width: 375px;">
+            <div style="width: 420px; padding-top: 20px;">
                 
                 <!-- Direction arrows and ok button -->
                 <div class="pull-left well well-small">
@@ -24,31 +24,27 @@
                             The data-keycode is the keycode value for the button pressed, this makes it a bit easier to use
                             Don't know how to pick this up, check my remote.js file
                             
-                            The id is the action to be performed. And the click is picked up with the "remoteKeys" and "volume" classes
+                            The id is the action to be performed. And the click is picked up with the "remoteKeys " and "volume" classes
                         -->
-                        <a href="#" data-keycode="119" id="up" class="remoteKeys btn  btn-inverse">
+                        <a href="#" data-keycode="119" id="up" title="UP (W)" class="remoteKeys  btn btn-large btn-inverse">
                             <i class="icon icon-white icon-arrow-up"></i>
                         </a>
-                    </div>
-                    
-                    <br />
+                    </div> 
             
                     <div>
-                        <a href="#" data-keycode="97" id="left" class="remoteKeys btn  btn-inverse">
+                        <a href="#" data-keycode="97" id="left"  title="LEFT (A)" class="remoteKeys  btn btn-large btn-inverse">
                             <i class="icon icon-white icon-arrow-left"></i>
                         </a>
-                            &nbsp;&nbsp;&nbsp;            
-                        <a href="#" data-keycode="13" id="ok" class="remoteKeys btn  btn-primary">OK</a>
-                            &nbsp;&nbsp;&nbsp;
-                        <a href="#" data-keycode="100" id="right" class="remoteKeys btn  btn-inverse">
+                           
+                        <a href="#" data-keycode="13" id="ok" title="OK (ENTER)" class="remoteKeys  btn btn-large btn-primary" style="margin: 5px;">OK</a>
+                            
+                        <a href="#" data-keycode="100" id="right" title="RIGHT (D)" class="remoteKeys  btn btn-large btn-inverse">
                             <i class="icon icon-white icon-arrow-right"></i>
                         </a>        
-                    </div>
-                    
-                    <br />
+                    </div> 
             
                     <div>
-                        <a href="#" data-keycode="115" id="down" class="remoteKeys btn  btn-inverse">
+                        <a href="#" data-keycode="115" id="down" title="DOWN (S)" class="remoteKeys  btn btn-large btn-inverse">
                             <i class="icon icon-white icon-arrow-down"></i>
                         </a>                 
                     </div>        
@@ -57,39 +53,42 @@
                 <!-- Play, stop, next and prev as well as XBMC and Music icons -->
                 <div class="pull-left span">
                     <div>
-                        <div class="btn-group">
-                            <a href="#" id="prev" class="remoteKeys btn ">
+                        <div class="btn-group" style="margin-bottom: 5px;">
+                            <a href="#" id="prev" title="Previous (B)" class="remoteKeys  btn btn-large">
                                 <i data-keycode="98" class="icon icon-backward"></i>
                             </a>
-                            <a href="#" id="play" class="remoteKeys btn ">
+                            <a href="#" id="play" title="Play (Space)" class="remoteKeys  btn btn-large">
                                 <i data-keycode="32" class="icon icon-play"></i>
                             </a>
-                            <a href="#" id="next" class="remoteKeys btn ">
+                            <a href="#" id="next" title="Next (N)" class="remoteKeys  btn btn-large">
                                 <i data-keycode="110" class="icon icon-forward"></i>
                             </a>
                         </div>
                         
                         <br />
                         
-                        <div>
-                            <a data-keycode="27" href="#" id="back" class="remoteKeys btn ">
+                        <div class="btn-group" style="margin-bottom: 5px;">
+                            <a data-keycode="27" href="#" title="Back (Backspace)" id="back" class="remoteKeys  btn btn-large">
                                 <i class="icon icon-repeat"></i>
                             </a>
-                                &nbsp;&nbsp;&nbsp;
-                            <a href="#" data-keycode="105" id="info" class="remoteKeys btn ">
+                            <a href="#" id="power" title="Close all open Media applications" class="remoteKeys  btn btn-inverse btn-large">
+                                <i class="icon icon-white icon-off"></i>                
+                            </a>
+                            <a href="#" data-keycode="105" id="info" title="Information (I)" class="remoteKeys  btn btn-large">
                                 <i class="icon icon-info-sign"></i>
                             </a>
                         </div>
                         
                         <br />
                         
-                        <div>                     
-                        <a href="#" data-keycode="120" id="xbmc" class="remoteKeys">
-                            <img src='assets/img/xbmc2.png' width="60" />                    
-                        </a>
-                        <a href="#" data-keycode="114" id="music" class="remoteKeys">
-                            <img src='assets/img/music.jpg' width="64" />                    
-                        </a>
+                        <div style="margin-top: 10px;">                     
+                            <a href="#" data-keycode="120" id="video" title="Launch Video Player (X)" class="remoteKeys ">
+                                <img src='assets/img/video.png' width="60" />                    
+                            </a>
+                            &nbsp;&nbsp;
+                            <a href="#" data-keycode="114" id="music" title="Launch Music Player (M)" class="remoteKeys ">
+                                <img src='assets/img/music.png' width="60" />                    
+                            </a>
                         </div>
                         
                     </div>
@@ -102,17 +101,17 @@
             <!-- Time for the volume controls -->
             <div class="row">
                 <div class="btn-group">       
-                    <button class="btn  remoteKeys" data-keycode="113" id="vol-down">Volume Down <i class="icon icon-volume-down"></i></button>                
-                    <button class="btn  activity"><i class="activity-icon icon icon-heart"></i></button>           
-                    <button class="btn  remoteKeys" data-keycode="101" id="vol-up">Volume Up <i class="icon icon-volume-up"></i></button>
+                    <button class="btn btn-large remoteKeys " title="Volume DOWN (A)" data-keycode="113" id="vol-down">Volume Down <i class="icon icon-volume-down"></i></button>                
+                    <button class="btn btn-large activity toolTip" title="Server Response"><i class="activity-icon icon icon-heart"></i></button>           
+                    <button class="btn btn-large remoteKeys " data-keycode="101" title="Volume UP (E)" id="vol-up">Volume Up <i class="icon icon-volume-up"></i></button>
                 </div>
             </div>
     
         </div><!-- </main div> -->
         
-        <!-- Lastly the javascript needed -->        
+        <!-- Lastly the javascript needed -->
         <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/remote.js"></script>
-        <script src="assets/js/bootstrap.js"></script>      
+        <script src="assets/js/bootstrap.js"></script>        
+        <script src="assets/js/remote.js"></script>      
     </body>
 </html>

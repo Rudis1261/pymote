@@ -1,5 +1,5 @@
 // Lets make it easy to change the filename
-var myScript = "index.php";
+var myScript = "index.html";
 
 // When the key is pressed, set it in the DB by running the AJAX
 $(".remoteKeys").click(function(event) {

@@ -1,3 +1,5 @@
+![Workflow](https://raw.github.com/drpain/pymote/master/assets/img/remote.jpg)  
+
 **The short and the long:**
 -----------
 
