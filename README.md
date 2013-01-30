@@ -1,4 +1,5 @@
-**PyMote Beta V0.1**  
+**PyMote Beta V0.1**
+-----------
 
 ![Remote](https://raw.github.com/drpain/pymote/master/assets/img/remote.jpg)  
 
@@ -60,4 +61,6 @@ For example my pc's IP Address is 192.168.1.3, so on my phone I go to my browser
 ## The CODE ##
 ***pymote.py***  
 
+```Python
 ![PyMote.py](https://raw.github.com/drpain/pymote/master/pymote.py)
+```
