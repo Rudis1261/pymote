@@ -1,6 +1,8 @@
-![Workflow](https://raw.github.com/drpain/pymote/master/assets/img/remote.jpg)  
+**PyMote Beta V0.1**  
 
-**The short and the long:**
+![Remote](https://raw.github.com/drpain/pymote/master/assets/img/remote.jpg)  
+
+**The short and the long:**  
 -----------
 
 ######Tested on Fedora 18
@@ -56,5 +58,6 @@ For example my pc's IP Address is 192.168.1.3, so on my phone I go to my browser
 ----------
 
 ## The CODE ##
-***pymote.py***   
-Coming soon
+***pymote.py***  
+
+![PyMote.py](https://raw.github.com/drpain/pymote/master/pymote.py)
