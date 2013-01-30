@@ -62,5 +62,5 @@ For example my pc's IP Address is 192.168.1.3, so on my phone I go to my browser
 ***pymote.py***  
 
 ```Python
-![PyMote.py](https://raw.github.com/drpain/pymote/master/pymote.py)
+![PyMote.py](http://raw.github.com/drpain/pymote/master/pymote.py)
 ```
