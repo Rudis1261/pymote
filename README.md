@@ -40,3 +40,5 @@ chmod +x * -R
 ```
 
 **On Fedora, You will need to open a "Persistent" port in your firewall for port 8080 otherwise you will not be able to open the server on your phone!!**
+
+![code](https://raw.github.com/drpain/pymote/master/pymote.py)
