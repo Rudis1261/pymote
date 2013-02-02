@@ -16,7 +16,7 @@ Server Installation
 
 I am personally running Fedora 18, but theoretically it should work on Ubuntu as it was originally written to work with Ubuntu.
 
-####Installation the server On Ubuntu / Debian based OS's
+####Installing the server On Ubuntu / Debian based OS's
 
 ```terminal
 sudo apt-get install python  
@@ -28,19 +28,24 @@ chmod +x * -R
 ./pymote.py  
 ```
 
-####Installation the server On Fedora  
+####Installing the server On Fedora  
 ```terminal  
 sudo yum install python  
 sudo yum install xdotool  
 sudo yum install git  
 git clone http://github.com/drpain/pymote.git  
 cd pymote/  
+firewall-cmd --permanent --zone=home --add-port=8080/tcp
+firewall-cmd --permanent --zone=work --add-port=8080/tcp
+firewall-cmd --permanent --zone=internal --add-port=8080/tcp
+firewall-cmd --permanent --zone=public --add-port=8080/tcp
 chmod +x * -R  
 ./pymote.py  
-```
-
-**On Fedora, You will need to open a "Persistent" port in your firewall for port 8080 otherwise you will not be able to open the server on your phone!!**      
-    
+```  
+You may have noted that we need to add firewall rules to open the port. Should you not like port 8080, you can change this to a port of your liking. Have a look as the "Customizing the Server" section.  
+Want to know more about the filewall-cmd. ![FirewallD Wiki, check it out](https://fedoraproject.org/wiki/FirewallD)  
+  
+  
 ##Customise the server, to suit your needs
 ![pymote.py](pymote.py) lines 10 through 15
 ```python
