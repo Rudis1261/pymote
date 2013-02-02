@@ -11,12 +11,12 @@ I originally created this because my stupid remote stopped working with my Ubunt
 - The **Server** being a simple Python server.
 - The **Client** a phone which accesses the server through a browser using a ***WIFI*** connection
 
-Installation
+Server Installation
 --------- 
 
 I am personally running Fedora 18, but theoretically it should work on Ubuntu as it was originally written to work with Ubuntu.
 
-####Installation On Ubuntu / Debian based OS's
+####Installation the server On Ubuntu / Debian based OS's
 
 ```terminal
 sudo apt-get install python  
@@ -28,8 +28,8 @@ chmod +x * -R
 ./pymote.py  
 ```
 
-####Installation On Fedora
-```terminal
+####Installation the server On Fedora  
+```terminal  
 sudo yum install python  
 sudo yum install xdotool  
 sudo yum install git  
@@ -39,6 +39,37 @@ chmod +x * -R
 ./pymote.py  
 ```
 
-**On Fedora, You will need to open a "Persistent" port in your firewall for port 8080 otherwise you will not be able to open the server on your phone!!**
+**On Fedora, You will need to open a "Persistent" port in your firewall for port 8080 otherwise you will not be able to open the server on your phone!!**      
+    
+##Customise the server, to suit your needs
+![pymote.py](pymote.py) lines 10 through 15
+```python
+# Variables (Constants)
+PORT = 8080
+IP = ''
+DEFAULT_VIDEO = 'xbmc'
+DEFAULT_MUSIC = 'rhythmbox'
+APPS = ('totem', 'vlc', 'xbmc', 'rhythmbox')
+```
+In the pymote.py file you have the ability to define some things to suite your liking.  
+   
+**PORT = 8080**    
 
-![code](https://raw.github.com/drpain/pymote/master/pymote.py)
+We will attempt to open this port to create the in-directory SimpleHTTPServer. Which will allow us to connecto to the PC from our phone.  
+
+This value can be set to any port of your liking, please note that this port should not conflict with commonly used ports such as 80 if you already have a webserver running on your PC. Or 21 if you have a FTP server. Not sure check this out ![Commonly used Ports](http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)  
+
+**DEFAULT_VIDEO = 'xbmc'** 
+ 
+The default video variable is the application name which will be run if the Video Play icon is clicked. In this case mine is set to xbmc. Ensure that you can launch the application of your choosing from within a terminal and you should have no issues.
+
+**DEFAULT_MUSIC = 'rhythmbox'**   
+
+The default music player can also be set. In this case I am sticking to rhythmbox which does it's job. 
+
+**APPS = ('totem', 'vlc', 'xbmc', 'rhythmbox')**  
+
+This is a ![python tuple](http://www.diveintopython.net/native_data_types/tuples.html) of the applications which should be killed when the following actions are performed:  
+- I launch the default video player or default music player
+- Click on the Power button in the client side interface
+
