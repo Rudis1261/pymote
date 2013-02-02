@@ -62,7 +62,7 @@ In the pymote.py file you have the ability to define some things to suite your l
 
 We will attempt to open this port to create the in-directory SimpleHTTPServer. Which will allow us to connecto to the PC from our phone.  
 
-This value can be set to any port of your liking, please note that this port should not conflict with commonly used ports such as 80 if you already have a webserver running on your PC. Or 21 if you have a FTP server. Not sure check this out ![Commonly used Ports](http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)  
+This value can be set to any port of your liking, please note that this port should not conflict with commonly used ports such as 80 if you already have a webserver running on your PC. Or 21 if you have a FTP server. Not sure check this out ![Commonly used Ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)  
 
 **DEFAULT_VIDEO = 'xbmc'** 
  
@@ -74,7 +74,7 @@ The default music player can also be set. In this case I am sticking to rhythmbo
 
 **APPS = ('totem', 'vlc', 'xbmc', 'rhythmbox')**  
 
-This is a ![python tuple](http://www.diveintopython.net/native_data_types/tuples.html) of the applications which should be killed when the following actions are performed:  
+This is a python tuple of the applications which should be killed when the following actions are performed:  
 - I launch the default video player or default music player
 - Click on the Power button in the client side interface
 
