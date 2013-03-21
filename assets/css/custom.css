@@ -1,0 +1,7 @@
+.btn-xxlarge {
+  padding: 20px 25px;
+  font-size: 25px;
+  -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+          border-radius: 12px;
+}
