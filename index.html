@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <title>Remote control</title>
         <!-- Bootstrap -->
@@ -8,111 +8,111 @@
         <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
         <link href="assets/css/custom.css" rel="stylesheet">
     </head>
-    
+
     <body>
         <!-- Main Container, to center the remote -->
         <div align="center">
-            
+
             <!-- We need to set width limits in order to center spans -->
             <!-- Main remote container -->
             <div style="width: 420px; ">
-                
+
                 <div>
                     <a href="#" id="power" title="Close all open Media applications" class="remoteKeys btn btn-block btn-danger btn-xxlarge" style="padding: 30px 25px;">
-                        <h4>Kill Active Media Players</h4>         
+                        <h4>Kill Active Media Players</h4>
                     </a>
                 </div>
-                
+
                 <br />
-                
-                
+
+
                 <!-- Direction arrows and ok button -->
-                <div class="well well-small" style="padding-left: 0px;">
+                <div class="" style="padding-left: 0px;">
                     <div>
-                        
+
                         <a href="#" data-keycode="105" id="info" title="Information (I)" class="remoteKeys  btn btn-xxlarge">
                             <h4>Info</h4>
                         </a>
-                        
+
                         <a href="#" data-keycode="119" id="up" title="UP (W)" class="remoteKeys  btn btn-xxlarge btn-inverse" style="margin: 0px 30px;">
                             <h4>&nbsp;&nbsp;UP&nbsp;&nbsp;</h4>
                         </a>
-                        
+
                         <a data-keycode="27" href="#" title="Back (Backspace)" id="back" class="remoteKeys  btn btn-xxlarge">
                             <h4>Back</h4>
                         </a>
-                        
-                    </div> 
+
+                    </div>
                     <br />
                     <div>
                         <a href="#" data-keycode="97" id="left"  title="LEFT (A)" class="remoteKeys  btn btn-xxlarge btn-inverse">
                             <h4>LEFT</h4>
                         </a>
-                           
+
                         <a href="#" data-keycode="13" id="ok" title="OK (ENTER)" class="remoteKeys  btn btn-xxlarge btn-primary" style="margin: 0px 25px;">
                             <h4>&nbsp;&nbsp;OK&nbsp;&nbsp;</h4>
                         </a>
-                            
+
                         <a href="#" data-keycode="100" id="right" title="RIGHT (D)" class="remoteKeys  btn btn-xxlarge btn-inverse">
                             <h4>RIGHT</h4>
-                        </a>        
-                    </div> 
+                        </a>
+                    </div>
                     <br />
                     <div>
                         <a href="#" data-keycode="120" id="video" title="Launch Video Player (X)" class="remoteKeys btn btn-xxlarge">
-                                <img src='assets/img/video.png' width="40" />                    
+                                <img src='assets/img/video.png' width="40" />
                             </a>
                         <a href="#" data-keycode="115" id="down" title="DOWN (S)" class="remoteKeys  btn btn-xxlarge btn-inverse" style="margin: 0px 21px;">
                             <h4>DOWN</h4>
                         </a>
                         <a href="#" data-keycode="114" id="music" title="Launch Music Player (M)" class="remoteKeys btn btn-xxlarge">
-                                <img src='assets/img/music.png' width="40" />                    
+                                <img src='assets/img/music.png' width="40" />
                         </a>
-                    </div>        
+                    </div>
                 </div>
-                
-                
+
+
                 <!-- Play, stop, next and prev as well as XBMC and Music icons -->
                 <div>
                     <div>
                         <br />
                         <div class="btn-group">
-                            
+
                             <a href="#" id="prev" title="Previous (B)" data-keycode="98" class="remoteKeys  btn btn-xxlarge">
                                <h4><i class="icon icon-backward"></i> Prev</h4>
                             </a>
-                            
+
                             <a href="#" id="play" data-keycode="32" title="Play (Space)" class="remoteKeys  btn btn-xxlarge">
                                 <h4>Pause / Play <i class="icon icon-play"></i></h4>
                             </a>
-                            
+
                             <a href="#" id="next" title="Next (N)" data-keycode="110" class="remoteKeys  btn btn-xxlarge">
                                 <h4>Next <i class="icon icon-forward"></i></h4>
-                            </a>                            
+                            </a>
                         </div>
-                        
+
                         <br />
                         <br />
                         <br />
-              
-                        <div class="btn-group">       
-                            <button class="btn btn-xxlarge remoteKeys " title="Volume DOWN (A)" data-keycode="113" id="vol-down"><h4>Volume Down</h4></button>                
-                            <button class="btn btn-xxlarge activity toolTip" title="Server Response"><h4><i class="activity-icon icon icon-heart"></i></h4></button>           
+
+                        <div class="btn-group">
+                            <button class="btn btn-xxlarge remoteKeys " title="Volume DOWN (A)" data-keycode="113" id="vol-down"><h4>Volume Down</h4></button>
+                            <button class="btn btn-xxlarge activity toolTip" title="Server Response"><h4><i class="activity-icon icon icon-heart"></i></h4></button>
                             <button class="btn btn-xxlarge remoteKeys " data-keycode="101" title="Volume UP (E)" id="vol-up"><h4>Volume Up</h4></button>
                         </div>
-                        
+
                     </div>
-                    
-                </div> 
+
+                </div>
             </div><!-- Done with the main remote component -->
 
-            
-    
+
+
         </div><!-- </main div> -->
-        
+
         <!-- Lastly the javascript needed -->
         <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/bootstrap.js"></script>        
-        <script src="assets/js/remote.js"></script>      
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/remote.js"></script>
     </body>
 </html>
