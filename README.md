@@ -65,7 +65,7 @@ You may have noted that we need to add firewall rules to open the port. Should y
 Want to know more about the filewall-cmd.
 
 ##Customise the server, to suit your needs
-![pymote.py](pymote.py) lines 10 through 15
+**pymote.py** lines 10 through 15
 ```python
 # Variables (Constants)
 PORT = 8080
@@ -80,7 +80,7 @@ In the pymote.py file you have the ability to define some things to suite your l
 
 We will attempt to open this port to create the in-directory SimpleHTTPServer. Which will allow us to connecto to the PC from our phone.
 
-This value can be set to any port of your liking, please note that this port should not conflict with commonly used ports such as 80 if you already have a webserver running on your PC. Or 21 if you have a FTP server. Not sure check this out ![Commonly used Ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+This value can be set to any port of your liking, please note that this port should not conflict with commonly used ports such as 80 if you already have a webserver running on your PC. Or 21 if you have a FTP server. Be sure to check that the port you use is not reserved for another service already.
 
 **DEFAULT_VIDEO = 'xbmc'**
 
