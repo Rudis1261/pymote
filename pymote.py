@@ -10,7 +10,7 @@ os.chdir(dname)
 # Variables (Constants)
 PORT = 8080
 IP = ''
-DEFAULT_VIDEO = 'xbmc'
+DEFAULT_VIDEO = 'totem'
 DEFAULT_MUSIC = 'rhythmbox'
 APPS = ('totem', 'vlc', 'xbmc', 'rhythmbox')
 
