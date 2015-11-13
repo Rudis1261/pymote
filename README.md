@@ -1,3 +1,5 @@
+# PLEASE NOTE THIS IS VERY OLD, AND MAY NOT WORK AS EXPECTED
+
 #PyMote Beta V0.1
 ###Linux Based Remote control (Debian & Fedora)
 
